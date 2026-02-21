@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                git branch: 'main', url: 'https://github.com/YanislavD/SEDO-Regular-Exam-2026-2.git'
             }
         }
 
